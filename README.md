@@ -18,7 +18,7 @@ Real-time vehicle and asset tracking on a live map. A simulated fleet drives rea
      |  REST: vehicles, geofences, history
      |  SignalR: live positions, geofence alerts
      v
- ASP.NET Core 8 API
+ ASP.NET Core 10 API
      |-- TrackingHub (SignalR)
      |-- FleetSimulator (BackgroundService)
      |-- GeofenceMonitor: enter/exit detection
@@ -42,7 +42,7 @@ Indexes: GiST on both geometry columns, and a composite index on `positions (veh
 
 ## Tech stack
 
-- **Back end:** C#, ASP.NET Core 8, SignalR, EF Core, NetTopologySuite
+- **Back end:** C#, ASP.NET Core 10, SignalR, EF Core, NetTopologySuite
 - **Database:** PostgreSQL 16 with PostGIS
 - **Front end:** TypeScript, Vite, MapLibre GL JS, OpenStreetMap-based vector tiles
 - **Tooling:** Docker Compose for local setup, GitHub Actions for CI
